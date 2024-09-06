@@ -59,9 +59,9 @@ if (isset($_POST['student_id']) && isset($_POST['semester']) && isset($_POST['ma
                 if ($stmt->execute()) {
                     $response['success'] = 'Marks updated successfully';
 
-                    $account_sid = 'AC5504ce4b813be61971a273402dffa972';
-                    $auth_token = '9e407a44b4a7fa8ff1aa438397bc3d29';   
-                    $twilio_number = '+19788481203';    
+                    $account_sid = 'your_sid';
+                    $auth_token = 'your_token';   
+                    $twilio_number = 'xxxxxxxxxxx';    
                     $client = new Client($account_sid, $auth_token);
 
                     try {
